@@ -1,0 +1,27 @@
+{
+  "name": "c3docker",
+  "main": "index",
+  "version": "0.1.0",
+  "description": "tests and scapes webpages",
+  "repository": "https://github.com/fentas/c3docker",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "dockerode": "^2.1.4",
+    "extend": "^2.0.1",
+    "q": "^1.4.1"
+  },
+  "author": {
+    "name": "Jan Guth",
+    "email": "jan.guth@gmail.com",
+    "url": "jan.guth.so"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-data": "github:fentas/gulp-data",
+    "gulp-shell": "^0.4.1",
+    "gulp-util": "^3.0.5"
+  },
+  "scripts": {
+    "//": "git checkout master && git submodule update --recursive"
+  }
+}
