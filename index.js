@@ -40,13 +40,14 @@ function docker(args) {
 
   return Q.Promise(function(resolve, reject, notify) {
     docker.createContainer(optsc, function(err, container) {
-      if ( err ) reject(err)
+      if ( err ) return reject(err)
 
       container.c3io = new c3io
       container.attach({stream: true, stdin: true, stdout: true, stderr: true}, function handler(err, stream) {
         if ( err ) reject(err)
         //console.log(stream)
         container.c3io.stdin.pipe(stream)
+        //container.modem.demuxStream(stream, container.c3io.stdout, container.c3io.stderr)
         stream.pipe(container.c3io.stdout)
         //stream.pipe(sio.stderr)
 

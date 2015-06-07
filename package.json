@@ -6,6 +6,7 @@
   "repository": "https://github.com/fentas/c3docker",
   "license": "AGPL-3.0",
   "dependencies": {
+    "buffer-indexof": "0.0.2",
     "dockerode": "^2.1.4",
     "extend": "^2.0.1",
     "q": "^1.4.1"

@@ -1,13 +1,14 @@
 var c3docker = require('../')
 
-c3docker().then(function(container) {
+c3docker({Cmd: ['/data/simple.js']}).then(function(container) {
   container.c3io.on('message', function(msg) {
-
+    console.warn('here', msg.toString())
   })
-  container.start({bind: [__dirname+':/data']}, function(err) {
+
+  container.start({Binds: [__dirname+':/data']}, function(err) {
 
     setTimeout(function() {
       container.kill(function(err) {})
-    }, 2000)
+    }, 5000)
   })
 }).done()
