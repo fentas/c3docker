@@ -1,4 +1,4 @@
-# c3io-docker
+# c3docker
 
 The aim of c3docker is to give a simple means of communication from nodejs
 to [docker](https://github.com/docker/docker/) and vise versa. It will _not_ fork all the
@@ -37,10 +37,9 @@ c3docker({Cmd: ['/data/simple.js']}).then(function(container) {
 }).done()
 ```
 
-[dokerode](https://github.com/apocas/dockerode) is used to remote control docker.
+* [dokerode](https://github.com/apocas/dockerode) is used to remote control docker.
 Please refer there for more information to control docker.
-
-How the communication works between c3docker and the docker itself please visit
+* How the communication works between c3docker and the docker itself please visit
 [c3io](https://github.com/fentas/c3io).
 
 Firstly `c3docker` takes some options (see [dockerode - createContainer]()).
