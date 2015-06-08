@@ -42,8 +42,8 @@ Please refer there for more information to control docker.
 * How the communication works between c3docker and the docker itself please visit
 [c3io](https://github.com/fentas/c3io).
 
-Firstly `c3docker` takes some options (see [dockerode - createContainer]()).
-Then it returns a promise. If successful the requested container will be returned.
+Firstly `c3docker` takes some options (see [dockerode - createContainer](https://github.com/apocas/dockerode)).
+Then it returns a promise. If successful the requested container will be passed over.
 With that you can do stuff. Hopefully.
 
 If you want to extend c3docker range of commands you just can do that as this.
