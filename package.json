@@ -2,7 +2,7 @@
   "name": "c3docker",
   "main": "index",
   "version": "0.1.0",
-  "description": "tests and scapes webpages",
+  "description": "The aim of c3docker is to create a simple means of communication from nodejs to docker and vise versa.",
   "repository": "https://github.com/fentas/c3docker",
   "license": "AGPL-3.0",
   "dependencies": {
@@ -18,11 +18,9 @@
   },
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-data": "github:fentas/gulp-data",
-    "gulp-shell": "^0.4.1",
     "gulp-util": "^3.0.5"
   },
   "scripts": {
-    "//": "git checkout master && git submodule update --recursive"
+
   }
 }
