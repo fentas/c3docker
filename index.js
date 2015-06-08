@@ -10,10 +10,10 @@ var c3io          = require('c3io'),
 if ( !fs.statSync(socket).isSocket() )
   throw new Error('Are you sure the docker is running?')
 
-
 function docker(args) {
   //if ( !(this instanceof docker) ) return docker
 
+  //TODO: make special docker image for c3docker ~as default
   var docker = new dockerode({ socketPath: socket }),
       optsc = extend(
   {
@@ -43,6 +43,7 @@ function docker(args) {
       if ( err ) return reject(err)
 
       container.c3io = new c3io
+      container.c3io.container = container
       container.attach({stream: true, stdin: true, stdout: true, stderr: true}, function handler(err, stream) {
         if ( err ) reject(err)
         //console.log(stream)
