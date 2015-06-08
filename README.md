@@ -7,6 +7,7 @@ docker functionality to nodejs. c3docker is just there for talking.
 c3docker uses [c3io](https://github.com/fentas/c3io) to transfer data from docker to node
 and back.
 
+__WORK IN PROGRESS - NOT STABLE__
 
 ## Basic usage
 
@@ -46,7 +47,7 @@ Firstly `c3docker` takes some options (see [dockerode - createContainer](https:/
 Then it returns a promise. If successful the requested container will be passed over.
 With that you can do stuff. Hopefully.
 
-If you want to extend c3docker range of commands you just can do that as this.
+If you want to extend c3docker range of commands you just can do that like this..
 
 ```node
 c3io.r2d2.kil = function(_data) {
