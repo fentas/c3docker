@@ -12,7 +12,8 @@
     "buffer-indexof": "0.0.2",
     "dockerode": "^2.1.4",
     "extend": "^2.0.1",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "c3io": "fentas/c3io"
   },
   "author": {
     "name": "Jan Guth",
